@@ -291,52 +291,7 @@ EAIP is composed of **multiple logical containers**, aligned with bounded contex
 ---
 
 ## Container Diagram (Textual)
-
-+-------------------+
-|    Web Client     |
-|   (Browser UI)    |
-+---------+---------+
-          |
-          | HTTPS
-          v
-+-------------------+
-|    API Gateway    |
-|  Auth / Routing  |
-+---------+---------+
-          |
-          | HTTPS
-          v
-+-------------------------------+
-|      Application Services     |
-| (Portfolio, ADR, Modeling)   |
-+---------+---------------------+
-          |
-          | Domain Events
-          v
-+-------------------+
-|  Event Backbone   |
-|  (Async Events)   |
-+----+---------+----+
-     |         |
-     |         |
-     v         v
-+---------+  +----------------------+
-|  Audit  |  |   Event Exchange     |
-| Service |  | (Webhooks / Queues)  |
-+----+----+  +----------+-----------+
-     |                  |
-     |                  | Webhooks / Queues
-     |                  v
-     |          +----------------------+
-     |          |   External Systems   |
-     |          | (Client Apps, CI/CD) |
-     |          +----------------------+
-     |
-     v
-+-------------------+
-| Audit Data Store  |
-|  (Append-only)    |
-+-------------------+
+![C4 Container Diagram](./images/c4-container-diagram.png)
 
 ---
 
