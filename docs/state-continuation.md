@@ -336,13 +336,13 @@ These elements are first-class citizens in the Enterprise Graph.
 ## Current Progress Pointer
 
 LAST COMPLETED:
-Documentation Phase (Architecture, Governance, Operations, Lifecycle)
+TOGAF Phase A – Architecture Vision (Pain, Impact, Stakeholders, Success Criteria)
 
 CURRENT MODE:
-TOGAF Phase A – Architecture Vision (Exploration & Alignment)
+TOGAF Phase A – Architecture Scope & Constraints (Paused)
 
 NEXT TOPIC:
-Business Impact, Stakeholders, and Success Criteria (Phase A)
+Phase A Completion – Scope, Out-of-Scope, and Architectural Constraints
 
 ---
 
@@ -437,3 +437,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Documentation will follow alignment, not precede it
 - A reusable Enterprise Architect Question Framework will be built
 - Entered TOGAF Phase A (Architecture Vision) exploration stage
+
+### Checkpoint – Phase A Near Completion (Sleep Pause)
+- Business pain, impact, stakeholders, and success criteria completed
+- Architecture Vision thinking validated and refined
+- Decision-support indicators concept aligned with TOGAF principles
+- Phase A intentionally paused before Scope & Constraints to avoid rushed decisions
