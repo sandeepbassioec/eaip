@@ -54,6 +54,10 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 13. Architecture is driven by goals, constraints, assumptions, and trade-offs
 14. No implicit decisions are allowed at system, solution, or component level
 15. The platform must be explainable to architects, not just executable by engineers
+16. Architecture execution follows the TOGAF ADM lifecycle in a circular, iterative manner
+17. Architecture learning is feedback-driven: questions, answers, correction, and refinement
+18. Architecture artifacts are produced only after stakeholder alignment is achieved
+19. Architectural thinking precedes documentation
 
 ---
 
@@ -173,6 +177,10 @@ These elements are first-class citizens in the Enterprise Graph.
 - Architecture decisions are linked to goals, constraints, and outcomes
 - The platform’s own architecture is modeled inside EAVIP as a reference implementation
 - EAVIP serves as its own living case study
+- An explicit Enterprise Architect Question Framework will be maintained
+- The question framework captures stakeholder-wise and phase-wise questions
+- This framework is reusable across future enterprise architecture engagements
+- Questions are derived from real execution, not theoretical templates
 
 ---
 
@@ -270,6 +278,20 @@ These elements are first-class citizens in the Enterprise Graph.
   - Demonstrates real-world usage of the platform
   Status: Locked
 
+- Decision: TOGAF ADM will be used as a practical learning and execution framework  
+  Details:
+  - Each ADM phase will be executed via real stakeholder questions
+  - Answers will be validated, corrected, and refined before artifact creation
+  - Learning and execution are treated as a single loop
+  Status: Locked
+
+- Decision: A reusable Enterprise Architect Question Framework will be created  
+  Details:
+  - Captures questions architects should ask before creating artifacts
+  - Stakeholder-specific and phase-specific
+  - Used as a reference for future professional engagements
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -317,10 +339,10 @@ LAST COMPLETED:
 Documentation Phase (Architecture, Governance, Operations, Lifecycle)
 
 CURRENT MODE:
-Architecture Execution using TOGAF-aligned Enterprise Architecture
+TOGAF Phase A – Architecture Vision (Exploration & Alignment)
 
 NEXT TOPIC:
-Architecture Vision & Business Architecture (EAVIP as the reference enterprise)
+Business Impact, Stakeholders, and Success Criteria (Phase A)
 
 ---
 
@@ -408,3 +430,10 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - EAVIP will be modeled inside itself as a living case study
 - Documentation phase formally closed
 - Transition to architecture execution phase approved
+
+### Checkpoint – TOGAF Phase A Learning & Execution Mode Locked
+- Confirmed full TOGAF ADM lifecycle will be followed circularly
+- Architecture learning will occur via questions, answers, and correction
+- Documentation will follow alignment, not precede it
+- A reusable Enterprise Architect Question Framework will be built
+- Entered TOGAF Phase A (Architecture Vision) exploration stage
