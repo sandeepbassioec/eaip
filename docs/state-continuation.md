@@ -113,6 +113,33 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 - Dependency-driven sequencing
 - Measurable progress tracking
 
+### Architecture Intelligence & Decision Support (Locked)
+
+The platform will provide advanced architecture intelligence capabilities,
+beyond static visualization, including:
+
+- Architecture "Why Layer":
+  Every major architectural structure must trace back to explicit rationale
+  (ADR, business capability, regulatory need, or trade-off).
+
+- Blast Radius Simulation:
+  Ability to simulate failures, changes, or deprecations and understand
+  cross-org, compliance, risk, and business impact.
+
+- Architecture Confidence Scoring:
+  Every entity and relationship will carry a confidence score based on
+  validation source, freshness, and ownership.
+
+- Architecture Optionality Index:
+  Measurement of how easily systems can change based on coupling,
+  dependency depth, and vendor lock-in.
+
+- Decision Regret Tracking:
+  Long-term tracking of architectural decisions versus actual outcomes
+  to enable organizational learning.
+
+These capabilities are first-class platform features, not optional add-ons.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -162,6 +189,35 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
   - Governance workflows apply identically to diagram-initiated changes
   Status: Locked
 
+- Decision: The platform will include Architecture Confidence Scoring
+  Details:
+  - Confidence reflects trustworthiness of architecture data
+  - Based on source, validation, observation, and recency
+  Status: Locked
+
+- Decision: The platform will support Blast Radius Simulation
+  Details:
+  - Failure, change, and deprecation scenarios
+  - Impact across organizations, compliance, risk, and value
+  Status: Locked
+
+- Decision: Architecture Optionality Index will be computed
+  Details:
+  - Measures structural agility and change readiness
+  - Used in executive reporting and transformation planning
+  Status: Locked
+
+- Decision: Architecture "Why Layer" will be mandatory for major structures
+  Details:
+  - All significant architecture must trace back to explicit rationale
+  Status: Locked
+
+- Decision: Decision Regret Tracking will be supported
+  Details:
+  - Outcomes of ADRs tracked over time
+  - Enables learning-oriented architecture governance
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -197,6 +253,7 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 - Plugin & Extension Framework
 - Commercial Model & Licensing
 - Master Documentation Index (docs/index.md)
+- Advanced Architecture Intelligence & Decision Support (Concept Locked)
 
 ---
 
@@ -271,3 +328,8 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Governance, security, compliance, reporting, value, observability, extensibility, and commercial models finalized
 - Master documentation index generated
 - Platform definition reached execution-ready maturity
+
+### Session – Advanced Architecture Intelligence Locked
+- Identified and locked next-generation EA differentiators
+- Platform scope extended beyond visualization into decision intelligence
+- Confidence scoring, blast radius simulation, optionality index, and decision learning locked as future capabilities
