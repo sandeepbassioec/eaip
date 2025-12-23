@@ -152,6 +152,16 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
   - The user will only perform instructed changes
   Status: Locked
 
+- Decision: Diagram-level inline creation of entities will require mandatory user confirmation
+  Details:
+  - Inline actions on diagrams must trigger a confirmation popup
+  - Two modes are enforced:
+    1. Link an existing entity
+    2. Create a new entity via proposal workflow
+  - No silent graph mutations are allowed
+  - Governance workflows apply identically to diagram-initiated changes
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -170,16 +180,27 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 - API Design, SDKs & Integration Contracts
 - Transformation, Modernization & Roadmap Intelligence
 - Enterprise Graph Schema & Query Model
-- 
+- API Specification (Concrete Endpoints & Contracts)
+- UI Interaction Model & Drill-Down Navigation
+- MVP Backlog & Sprint Breakdown
+- Backend Reference Implementation
+- Frontend Reference Implementation
+- Infrastructure & Deployment Reference
+- Security Review, Threat Modeling & Abuse Cases
+- UI Wireframes & Screen Flows
+- Governance Workflows & Decision Lifecycle
+- Document Management, Indexing & Search
+- Diagram Interaction & Inline Creation Rules
+
 ---
 
 ## Current Progress Pointer
 
 LAST COMPLETED:
-Enterprise Graph Schema & Query Model
+Diagram Interaction & Inline Creation Rules
 
 NEXT TOPIC:
-API Specification (Concrete Endpoints & Contracts)
+Reporting & Executive Dashboards
 
 ---
 
@@ -209,6 +230,13 @@ ambiguity, memory loss, or repeated explanations.
    **no changes should be made** to the state file.
 
 5. This protocol overrides conversational assumptions and memory.
+   
+7. Exception Rule:
+   - The single-copyable-markdown-block rule does NOT apply to `state-continuation.md`
+   - This file may use multiple sections for clarity
+   - The assistant must explicitly state ADD / UPDATE / NOT TOUCH instructions
+   Status: Locked
+
 
 ### Enforcement
 
