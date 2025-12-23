@@ -5,9 +5,8 @@ This repository contains the **authoritative design, architecture, and operating
 documentation** for EAVIP.
 
 If you are new:
-1. Read `state-continuation.md`
-2. Start from **Vision**
-3. Follow the sections in order
+1. Start from **Vision**
+2. Follow the sections in order
 
 ---
 
