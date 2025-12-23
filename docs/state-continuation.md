@@ -49,6 +49,11 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 8. Integrations are adapter-based, not vendor-bound
 9. Humans approve decisions; systems surface impact
 10. No silent drift is allowed
+11. Platform execution follows an explicit Enterprise Architecture framework (TOGAF-aligned)
+12. Every architectural decision must be explicit, documented, and traceable
+13. Architecture is driven by goals, constraints, assumptions, and trade-offs
+14. No implicit decisions are allowed at system, solution, or component level
+15. The platform must be explainable to architects, not just executable by engineers
 
 ---
 
@@ -140,6 +145,20 @@ beyond static visualization, including:
 
 These capabilities are first-class platform features, not optional add-ons.
 
+### Architecture Execution Framework (TOGAF-Aligned)
+
+- Architecture Vision
+- Business Architecture
+- Information Systems Architecture
+  - Data Architecture
+  - Application Architecture
+- Technology Architecture
+- Architecture Decision Records (ADRs)
+- Architecture Constraints, Assumptions, and Risks
+- Architecture Governance & Change Control
+
+These elements are first-class citizens in the Enterprise Graph.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -150,6 +169,10 @@ These capabilities are first-class platform features, not optional add-ons.
 - Full-text + contextual indexing
 - GitHub-friendly structure
 - A master `index.md` will be generated **at the very end**
+- TOGAF-style architectural artifacts are explicitly captured
+- Architecture decisions are linked to goals, constraints, and outcomes
+- The platform’s own architecture is modeled inside EAVIP as a reference implementation
+- EAVIP serves as its own living case study
 
 ---
 
@@ -232,6 +255,21 @@ These capabilities are first-class platform features, not optional add-ons.
   - No Phase-2/3 capability may leak into Phase-1
   Status: Locked
 
+- Decision: Platform execution will follow a TOGAF-aligned enterprise architecture model  
+  Details:
+  - Architecture Vision, Business, Application, Data, and Technology views are explicit
+  - Architecture decisions are treated as governed artifacts
+  Status: Locked
+
+- Decision: All architectural decisions must capture goals, constraints, assumptions, and trade-offs  
+  Status: Locked
+
+- Decision: EAVIP will model and expose its own architecture as a first-class case study  
+  Details:
+  - Used as a reference for customers
+  - Demonstrates real-world usage of the platform
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -276,10 +314,13 @@ These capabilities are first-class platform features, not optional add-ons.
 ## Current Progress Pointer
 
 LAST COMPLETED:
-Commercial Model & Licensing + Master Documentation Index
+Documentation Phase (Architecture, Governance, Operations, Lifecycle)
+
+CURRENT MODE:
+Architecture Execution using TOGAF-aligned Enterprise Architecture
 
 NEXT TOPIC:
-Stabilization Phase / Review / Optional Enhancements
+Architecture Vision & Business Architecture (EAVIP as the reference enterprise)
 
 ---
 
@@ -359,3 +400,11 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Phase-1 epics and non-goals finalized
 - MVP scope protected against feature leakage
 - Execution-ready breakdown prepared for engineering teams
+
+### Checkpoint – Architecture Execution Strategy Locked
+- Confirmed TOGAF-aligned execution model
+- Architecture decisions will be explicit, governed, and traceable
+- Goals, constraints, assumptions, and trade-offs are mandatory artifacts
+- EAVIP will be modeled inside itself as a living case study
+- Documentation phase formally closed
+- Transition to architecture execution phase approved
