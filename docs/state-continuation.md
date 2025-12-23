@@ -218,6 +218,13 @@ These capabilities are first-class platform features, not optional add-ons.
   - Enables learning-oriented architecture governance
   Status: Locked
 
+- Decision: Platform execution will follow a phased roadmap
+  Details:
+  - Delivery will be organized into explicit phases
+  - Each phase has clear objectives and exit criteria
+  - No phase auto-rolls into the next without review
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -254,6 +261,7 @@ These capabilities are first-class platform features, not optional add-ons.
 - Commercial Model & Licensing
 - Master Documentation Index (docs/index.md)
 - Advanced Architecture Intelligence & Decision Support (Concept Locked)
+- Roadmap & Phased Execution Plan
 
 ---
 
@@ -333,3 +341,8 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Identified and locked next-generation EA differentiators
 - Platform scope extended beyond visualization into decision intelligence
 - Confidence scoring, blast radius simulation, optionality index, and decision learning locked as future capabilities
+
+### Session – Phased Execution Roadmap Locked
+- Execution roadmap defined from Foundation through Market Leadership
+- Phases sequenced to preserve architectural integrity
+- Decision gates and exit criteria formalized
