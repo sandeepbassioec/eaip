@@ -225,6 +225,13 @@ These capabilities are first-class platform features, not optional add-ons.
   - No phase auto-rolls into the next without review
   Status: Locked
 
+- Decision: Phase-1 scope and epics are strictly locked
+  Details:
+  - Phase-1 is limited to core modeling, governance, diagrams, documents, and read-only reporting
+  - Advanced intelligence, observability, plugins, and AI are explicitly excluded
+  - No Phase-2/3 capability may leak into Phase-1
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -262,6 +269,7 @@ These capabilities are first-class platform features, not optional add-ons.
 - Master Documentation Index (docs/index.md)
 - Advanced Architecture Intelligence & Decision Support (Concept Locked)
 - Roadmap & Phased Execution Plan
+- Phase 1 Prioritization & Epic Breakdown (MVP Execution)
 
 ---
 
@@ -346,3 +354,8 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Execution roadmap defined from Foundation through Market Leadership
 - Phases sequenced to preserve architectural integrity
 - Decision gates and exit criteria formalized
+
+### Session – Phase-1 MVP Execution Scope Locked
+- Phase-1 epics and non-goals finalized
+- MVP scope protected against feature leakage
+- Execution-ready breakdown prepared for engineering teams
