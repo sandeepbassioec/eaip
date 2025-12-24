@@ -350,6 +350,54 @@ The following high-level logical interactions define how EAVIP applications coll
 
 All interactions preserve the Enterprise Architecture Repository as the single source of truth, while event-based notifications are used for downstream awareness and integration.
 
+### Data Architecture – Core Entities, Ownership & Lifecycle (Locked)
+
+The EAVIP Data Architecture is built around a graph-first, ownership-driven model.
+Each entity has a single authoritative owner, a clearly defined lifecycle, and
+event-driven propagation across bounded contexts.
+
+#### Core Data Entities (Canonical)
+- Enterprise
+- Organization
+- Application
+- ApplicationComponent
+- ExternalSystem
+- Dependency
+- DataFlow
+- DomainEvent
+- ArchitectureMetric
+- DecisionRule
+- DecisionIndicator
+- ArchitectureDecision
+- Policy
+- ComplianceRequirement
+- ComplianceAssessment
+- DeploymentModel
+- DeploymentNode
+- Environment
+- ArchitectureDiagram
+
+#### Ownership Principles
+- Only the owning bounded context may mutate an entity
+- All other contexts may consume, derive, or propose changes
+- Strong consistency is enforced only within the owning context
+- Cross-context synchronization is event-driven and eventually consistent
+
+#### Lifecycle & Mutation Rules (Examples)
+- Application and ApplicationComponent changes originate in the Core Architecture Context
+- Discovery proposes changes via events; it never mutates canonical data directly
+- Metrics, indicators, and reports are fully derived and disposable
+- Architecture decisions are immutable and versioned, never deleted
+- Deployment models are retired, not removed
+
+#### Event-Driven Propagation
+- Entity lifecycle changes emit explicit, entity-scoped domain events
+- Events trigger downstream recalculation, visualization refresh, and governance evaluation
+- Complex, long-running change propagation follows Saga-style choreography
+
+This model ensures architectural integrity, historical traceability, and safe evolution
+across enterprise-scale systems.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -368,6 +416,33 @@ All interactions preserve the Enterprise Architecture Repository as the single s
 - The question framework captures stakeholder-wise and phase-wise questions
 - This framework is reusable across future enterprise architecture engagements
 - Questions are derived from real execution, not theoretical templates
+### Documentation Reasoning Rule (Non-Negotiable)
+
+All TOGAF and Domain-Driven Design (DDD) documentation produced for EAVIP
+must explicitly include architectural reasoning and decision context.
+
+For every documented architecture artifact, the following MUST be captured:
+
+1. What decision or design was made
+2. Why this approach was chosen
+3. What alternative options were considered
+4. Why those alternatives were rejected
+5. What trade-offs were accepted as part of the decision
+
+This rule exists to ensure:
+- Long-term knowledge retention
+- Explainable architecture decisions
+- Reusability of documentation as reference architecture
+- Reduced dependency on tribal knowledge or individual memory
+
+Documentation without explicit reasoning is considered incomplete and non-compliant
+with the EAVIP architectural standards.
+
+This rule applies to:
+- TOGAF architecture documents
+- DDD domain models and artifacts
+- Architecture Decision Records (ADRs)
+- Reference architectures derived from this project
 
 ---
 
@@ -479,6 +554,10 @@ All interactions preserve the Enterprise Architecture Repository as the single s
   - Used as a reference for future professional engagements
   Status: Locked
 
+- Decision: All TOGAF and DDD documentation must include explicit WHY, alternatives,
+  and trade-off explanations as part of every architectural artifact  
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -517,6 +596,7 @@ All interactions preserve the Enterprise Architecture Repository as the single s
 - Advanced Architecture Intelligence & Decision Support (Concept Locked)
 - Roadmap & Phased Execution Plan
 - Phase 1 Prioritization & Epic Breakdown (MVP Execution)
+- TOGAF Phase C – Data Architecture (Entities, Ownership & Lifecycle)
 
 ---
 
@@ -524,12 +604,13 @@ All interactions preserve the Enterprise Architecture Repository as the single s
 
 LAST COMPLETED:
 TOGAF Phase C – Application Architecture
-
-CURRENT MODE:
 TOGAF Phase C – Data Architecture
 
+CURRENT MODE:
+Phase C Complete – Transition to Domain & Technology Execution
+
 NEXT TOPIC:
-Data Architecture – Core Data Entities, Ownership, and Flows
+Explicit Domain-Driven Design (Bounded Contexts, Aggregates, Events)
 
 ---
 
@@ -679,3 +760,10 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Capability-to-application mappings validated and locked
 - Application interaction model completed with clear authority boundaries
 - Application Architecture closed and ready for Data Architecture
+
+### Checkpoint – TOGAF Phase C Data Architecture Completed
+- Canonical enterprise data entities finalized and locked
+- Clear ownership and authority boundaries established
+- Entity lifecycle and mutation flows defined
+- Event-driven propagation and saga patterns identified
+- Phase C (Application + Data Architecture) fully completed
