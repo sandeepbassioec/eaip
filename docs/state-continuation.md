@@ -257,6 +257,66 @@ The EAVIP platform is composed of the following logical applications:
 7. **Integration & Event Exchange System**  
    Enables inbound and outbound integrations via APIs, webhooks, and event-based mechanisms.
 
+### Application Architecture – Capability to Application Mapping (Locked)
+
+Business capabilities are supported by the following logical applications:
+
+- **Enterprise Portfolio Management**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling, Reporting & Export
+
+- **Application Architecture Modeling**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling
+
+- **Component & Service Modeling**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling
+
+- **Data Flow & Integration Visibility**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling, Integration & Event Exchange
+
+- **Dependency & Impact Awareness**  
+  Supported by: Enterprise Architecture Repository, Architecture Metrics & Decision Indicators, Architecture Visualization & Modeling
+
+- **Multi-Organization Enterprise Modeling**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling, Reporting & Export
+
+- **Security & Trust Architecture Modeling**  
+  Supported by: Enterprise Architecture Repository, Architecture Visualization & Modeling, Architecture Decision & Governance
+
+- **Security Risk & Boundary Analysis**  
+  Supported by: Architecture Metrics & Decision Indicators, Enterprise Architecture Repository, Architecture Visualization & Modeling
+
+- **Deployment & Resilience Modeling**  
+  Supported by: Architecture Discovery & Ingestion, Enterprise Architecture Repository, Architecture Visualization & Modeling, Architecture Metrics & Decision Indicators
+
+- **Architecture Cost & Value Reasoning**  
+  Supported by: Architecture Metrics & Decision Indicators, Enterprise Architecture Repository, Reporting & Export
+
+- **Architecture Health & Decision Indicators**  
+  Supported by: Architecture Metrics & Decision Indicators, Enterprise Architecture Repository, Architecture Visualization & Modeling
+
+- **Architecture Decision Management**  
+  Supported by: Architecture Decision & Governance, Enterprise Architecture Repository, Reporting & Export
+
+- **Stakeholder-Specific View Generation**  
+  Supported by: Architecture Visualization & Modeling, Reporting & Export
+
+- **Architecture Evolution & Change Tracking**  
+  Supported by: Enterprise Architecture Repository, Architecture Decision & Governance, Architecture Metrics & Decision Indicators
+
+- **Governance & Policy Modeling**  
+  Supported by: Architecture Decision & Governance, Enterprise Architecture Repository
+
+- **Environment & Deployment Neutrality**  
+  Supported by: Architecture Discovery & Ingestion, Architecture Visualization & Modeling, Integration & Event Exchange
+
+- **Architecture Import / Export & Interoperability**  
+  Supported by: Integration & Event Exchange, Reporting & Export, Architecture Discovery & Ingestion
+
+- **Multi-Modal Architecture Editing**  
+  Supported by: Architecture Visualization & Modeling, Architecture Discovery & Ingestion
+
+All capabilities are fully supported, with no overloaded applications, no missing responsibilities, and no forced mappings.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -568,3 +628,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Clear separation established between discovery, storage, analysis, visualization, governance, and integration
 - Application portfolio aligned with business capabilities and value streams
 - Foundation set for capability-to-application mapping
+
+### Checkpoint – Phase C Capability to Application Mapping Locked
+- Capability to application mappings validated and finalized
+- No unsupported capabilities or overloaded applications identified
+- Delivery sequencing confirmed for later-phase capabilities
+- Application architecture deemed internally consistent and execution-ready
