@@ -523,13 +523,13 @@ All interactions preserve the Enterprise Architecture Repository as the single s
 ## Current Progress Pointer
 
 LAST COMPLETED:
-TOGAF Phase B – Business Architecture (Capabilities & Value Streams)
+TOGAF Phase C – Application Architecture
 
 CURRENT MODE:
-TOGAF Phase C – Information Systems Architecture
+TOGAF Phase C – Data Architecture
 
 NEXT TOPIC:
-Application Architecture – Mapping Business Capabilities to Applications
+Data Architecture – Core Data Entities, Ownership, and Flows
 
 ---
 
@@ -673,3 +673,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Clear separation enforced between data authority and event notification
 - No direct coupling between discovery and presentation layers
 - Application architecture deemed consistent and ready for Phase C completion
+
+### Checkpoint – TOGAF Phase C Application Architecture Completed
+- Logical application portfolio finalized and locked
+- Capability-to-application mappings validated and locked
+- Application interaction model completed with clear authority boundaries
+- Application Architecture closed and ready for Data Architecture
