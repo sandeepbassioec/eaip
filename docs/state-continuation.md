@@ -405,13 +405,13 @@ Preserves architectural knowledge and decisions over time, reducing manual disco
 ## Current Progress Pointer
 
 LAST COMPLETED:
-TOGAF Phase A – Architecture Vision (Fully Completed)
+TOGAF Phase B – Business Architecture (Capabilities & Value Streams)
 
 CURRENT MODE:
-TOGAF Phase B – Business Architecture
+TOGAF Phase C – Information Systems Architecture
 
 NEXT TOPIC:
-Business Capabilities, Value Streams, and Organizational Participation
+Application Architecture – Mapping Business Capabilities to Applications
 
 ---
 
@@ -531,3 +531,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Value streams aligned with business outcomes, not tooling
 - Clear linkage established between capabilities and value delivery
 - Phase B business architecture structure stabilized
+
+### Checkpoint – TOGAF Phase B Completed
+- Business architecture completed with stable capabilities and value streams
+- Capability prioritization aligned to adoption and long-term intelligence
+- Clear linkage established between business value and architectural intent
+- Ready to transition to Phase C – Information Systems Architecture
