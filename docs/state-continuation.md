@@ -187,37 +187,50 @@ The platform supports the following core business capabilities:
 - Multi-Modal Architecture Editing
 
 These capabilities represent stable business abilities and are independent of implementation or technology choices.
-  Capabilities are prioritized into three execution tiers:
 
-  #### Mission-Critical (Day-1 Foundation)
-  - Enterprise Portfolio Management
-  - Application Architecture Modeling
-  - Component & Service Modeling
-  - Data Flow & Integration Visibility
-  - Dependency & Impact Awareness
-  - Multi-Organization Enterprise Modeling
+### Business Architecture – Capability Prioritization (Locked)
 
-  These capabilities form the minimum viable enterprise architecture platform and are required for credibility and     usability.
+Capabilities are prioritized into three execution tiers:
 
-  #### Critical Enablement (Early Phase)
-  - Stakeholder-Specific View Generation
-  - Architecture Decision Management
-  - Multi-Modal Architecture Editing (Diagram & Forms)
-  - Architecture Import / Export & Interoperability
+#### Mission-Critical (Day-1 Foundation)
+- Enterprise Portfolio Management
+- Application Architecture Modeling
+- Component & Service Modeling
+- Data Flow & Integration Visibility
+- Dependency & Impact Awareness
+- Multi-Organization Enterprise Modeling
 
-  These capabilities enable adoption, trust, onboarding efficiency, and long-term usability.
+These capabilities form the minimum viable enterprise architecture platform and are required for credibility and usability.
 
-  #### Advanced Intelligence (Later Phase)
-  - Architecture Health & Decision Indicators
-  - Architecture Cost & Value Reasoning
-  - Deployment & Resilience Modeling
-  - Security & Trust Architecture Modeling
-  - Security Risk & Boundary Analysis
-  - Governance & Policy Modeling
-  - Architecture Evolution & Change Tracking
-  - Deep Environment & Deployment Neutrality
-  
-  These capabilities provide architectural intelligence, optimization, and differentiation over time.
+#### Critical Enablement (Early Phase)
+- Stakeholder-Specific View Generation
+- Architecture Decision Management
+- Multi-Modal Architecture Editing (Diagram & Forms)
+- Architecture Import / Export & Interoperability
+
+These capabilities enable adoption, trust, onboarding efficiency, and long-term usability.
+
+#### Advanced Intelligence (Later Phase)
+- Architecture Health & Decision Indicators
+- Architecture Cost & Value Reasoning
+- Deployment & Resilience Modeling
+- Security & Trust Architecture Modeling
+- Security Risk & Boundary Analysis
+- Governance & Policy Modeling
+- Architecture Evolution & Change Tracking
+- Deep Environment & Deployment Neutrality
+
+These capabilities provide architectural intelligence, optimization, and differentiation over time.
+
+### Business Architecture – Value Streams (Locked)
+
+The platform delivers value through the following core value streams:
+
+#### Architecture Discovery & Decision Enablement
+Enables enterprises to discover existing architectures, understand dependencies and constraints, and make confident, evidence-based decisions for product, architecture, and technology roadmaps.
+
+#### Architecture Knowledge Retention & Cost Optimization
+Preserves architectural knowledge and decisions over time, reducing manual discovery, repeated discussions, and costly mistakes while improving long-term organizational learning.
 
 ---
 
@@ -512,3 +525,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Capabilities categorized into foundation, enablement, and intelligence tiers
 - Mission-critical scope clearly separated from advanced reasoning features
 - Capability prioritization aligned with adoption, trust, and long-term differentiation
+
+### Checkpoint – Phase B Value Streams Identified
+- Two core value streams identified and validated
+- Value streams aligned with business outcomes, not tooling
+- Clear linkage established between capabilities and value delivery
+- Phase B business architecture structure stabilized
