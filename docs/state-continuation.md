@@ -187,6 +187,37 @@ The platform supports the following core business capabilities:
 - Multi-Modal Architecture Editing
 
 These capabilities represent stable business abilities and are independent of implementation or technology choices.
+  Capabilities are prioritized into three execution tiers:
+
+  #### Mission-Critical (Day-1 Foundation)
+  - Enterprise Portfolio Management
+  - Application Architecture Modeling
+  - Component & Service Modeling
+  - Data Flow & Integration Visibility
+  - Dependency & Impact Awareness
+  - Multi-Organization Enterprise Modeling
+
+  These capabilities form the minimum viable enterprise architecture platform and are required for credibility and     usability.
+
+  #### Critical Enablement (Early Phase)
+  - Stakeholder-Specific View Generation
+  - Architecture Decision Management
+  - Multi-Modal Architecture Editing (Diagram & Forms)
+  - Architecture Import / Export & Interoperability
+
+  These capabilities enable adoption, trust, onboarding efficiency, and long-term usability.
+
+  #### Advanced Intelligence (Later Phase)
+  - Architecture Health & Decision Indicators
+  - Architecture Cost & Value Reasoning
+  - Deployment & Resilience Modeling
+  - Security & Trust Architecture Modeling
+  - Security Risk & Boundary Analysis
+  - Governance & Policy Modeling
+  - Architecture Evolution & Change Tracking
+  - Deep Environment & Deployment Neutrality
+  
+  These capabilities provide architectural intelligence, optimization, and differentiation over time.
 
 ---
 
@@ -475,3 +506,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Human-in-the-loop and explainability locked as core principles
 - Vendor neutrality and adoption realism explicitly addressed
 - Ready to proceed to Phase B – Business Architecture
+
+### Checkpoint – Phase B Capability Prioritization Locked
+- Core business capabilities identified and finalized
+- Capabilities categorized into foundation, enablement, and intelligence tiers
+- Mission-critical scope clearly separated from advanced reasoning features
+- Capability prioritization aligned with adoption, trust, and long-term differentiation
