@@ -317,6 +317,39 @@ Business capabilities are supported by the following logical applications:
 
 All capabilities are fully supported, with no overloaded applications, no missing responsibilities, and no forced mappings.
 
+### Application Architecture – Application Interaction Model (Locked)
+
+The following high-level logical interactions define how EAVIP applications collaborate while preserving clear ownership and authority boundaries:
+
+- **Architecture Discovery & Ingestion → Enterprise Architecture Repository**  
+  Persists discovered architecture information into the authoritative system of record.
+
+- **Enterprise Architecture Repository → Architecture Metrics & Decision Indicators**  
+  Supplies authoritative architecture data for computing health, risk, cost, and lifecycle indicators.
+
+- **Architecture Metrics & Decision Indicators → Architecture Visualization & Modeling**  
+  Provides derived indicators for visualization and stakeholder consumption.
+
+- **Enterprise Architecture Repository → Architecture Visualization & Modeling**  
+  Supplies curated architecture data for diagrams and architectural views.
+
+- **Enterprise Architecture Repository → Reporting & Export**  
+  Provides authoritative data for executive reports and exportable artifacts.
+
+- **Architecture Decision & Governance → Enterprise Architecture Repository**  
+  Persists architectural decisions, policies, and governance constraints.
+
+- **Enterprise Architecture Repository → Architecture Decision & Governance**  
+  Supplies historical and contextual architecture data required for governance workflows.
+
+- **Enterprise Architecture Repository → Integration & Event Exchange**  
+  Emits architecture change events for external system integration.
+
+- **Architecture Discovery & Ingestion → Integration & Event Exchange**  
+  Emits discovery and ingestion events to notify external systems.
+
+All interactions preserve the Enterprise Architecture Repository as the single source of truth, while event-based notifications are used for downstream awareness and integration.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -634,3 +667,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - No unsupported capabilities or overloaded applications identified
 - Delivery sequencing confirmed for later-phase capabilities
 - Application architecture deemed internally consistent and execution-ready
+
+### Checkpoint – Phase C Application Interactions Locked
+- High-level application interaction model finalized
+- Clear separation enforced between data authority and event notification
+- No direct coupling between discovery and presentation layers
+- Application architecture deemed consistent and ready for Phase C completion
