@@ -163,6 +163,31 @@ These capabilities are first-class platform features, not optional add-ons.
 
 These elements are first-class citizens in the Enterprise Graph.
 
+### Business Architecture – Core Capabilities (Locked)
+
+The platform supports the following core business capabilities:
+
+- Enterprise Portfolio Management
+- Application Architecture Modeling
+- Component & Service Modeling
+- Data Flow & Integration Visibility
+- Dependency & Impact Awareness
+- Multi-Organization Enterprise Modeling
+- Security & Trust Architecture Modeling
+- Security Risk & Boundary Analysis
+- Deployment & Resilience Modeling
+- Architecture Cost & Value Reasoning
+- Architecture Health & Decision Indicators
+- Architecture Decision Management
+- Stakeholder-Specific View Generation
+- Architecture Evolution & Change Tracking
+- Governance & Policy Modeling
+- Environment & Deployment Neutrality
+- Architecture Import / Export & Interoperability
+- Multi-Modal Architecture Editing
+
+These capabilities represent stable business abilities and are independent of implementation or technology choices.
+
 ---
 
 ## Documentation Strategy (Locked)
