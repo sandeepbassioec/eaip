@@ -232,6 +232,31 @@ Enables enterprises to discover existing architectures, understand dependencies 
 #### Architecture Knowledge Retention & Cost Optimization
 Preserves architectural knowledge and decisions over time, reducing manual discovery, repeated discussions, and costly mistakes while improving long-term organizational learning.
 
+### Application Architecture – Logical Application Portfolio (Locked)
+
+The EAVIP platform is composed of the following logical applications:
+
+1. **Architecture Discovery & Ingestion System**  
+   Captures and ingests application, component, dependency, and environment information through manual input and automated sources.
+
+2. **Enterprise Architecture Repository**  
+   Serves as the authoritative system of record for architecture models, relationships, and historical states.
+
+3. **Architecture Metrics & Decision Indicators System**  
+   Computes architecture health, risk, cost, and lifecycle indicators to support evidence-based decision-making.
+
+4. **Architecture Visualization & Modeling System**  
+   Generates stakeholder-specific architecture views and diagrams, including C4, data flow, ER, deployment, cloud, and component diagrams.
+
+5. **Architecture Decision & Governance System**  
+   Captures architectural decisions, rationale, assumptions, governance policies, and constraints over time.
+
+6. **Reporting & Export System**  
+   Produces executive reports, operational summaries, and exportable architecture artifacts.
+
+7. **Integration & Event Exchange System**  
+   Enables inbound and outbound integrations via APIs, webhooks, and event-based mechanisms.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -537,3 +562,9 @@ This protocol is **locked** and must be followed for the lifetime of the project
 - Capability prioritization aligned to adoption and long-term intelligence
 - Clear linkage established between business value and architectural intent
 - Ready to transition to Phase C – Information Systems Architecture
+
+### Checkpoint – Phase C Application Portfolio Defined
+- Logical application boundaries identified and validated
+- Clear separation established between discovery, storage, analysis, visualization, governance, and integration
+- Application portfolio aligned with business capabilities and value streams
+- Foundation set for capability-to-application mapping
