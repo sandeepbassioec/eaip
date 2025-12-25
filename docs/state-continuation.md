@@ -649,6 +649,10 @@ This rule applies to:
   and trade-off explanations as part of every architectural artifact  
   Status: Locked
 
+- Decision: All TOGAF and DDD documentation must explicitly include
+  WHY, REASONING, and TRADE-OFFS for every architectural choice.
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
@@ -691,20 +695,24 @@ This rule applies to:
 - Platform Configuration Aggregate & Guided Customer Onboarding Architecture
 - Domain Services design and cross-aggregate business logic modeling
 - Secure connectivity, secret management, and customer infrastructure integration
+- Repository Pattern & Unit of Work (DDD Execution)
+- Domain Services & Cross-Aggregate Policies
+- Process Managers (Sagas) & Eventual Consistency
+- API Design & Contract Strategy
+- Security Architecture & Zero Trust Enforcement
+- Observability, Telemetry & Architecture Drift Detection
+- Reporting, Dashboards & Executive Views
+- Extensibility, Plugins & Ecosystem Model
 
 ---
 
 ## Current Progress Pointer
 
 LAST COMPLETED:
-TOGAF Phase C – Application Architecture
-TOGAF Phase C – Data Architecture
-
-CURRENT MODE:
-Phase C Complete – Transition to Domain & Technology Execution
+Extensibility, Plugins & Ecosystem Model
 
 NEXT TOPIC:
-Explicit Domain-Driven Design (Bounded Contexts, Aggregates, Events)
+Deployment Models, Packaging & Distribution Strategy
 
 ---
 
