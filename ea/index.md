@@ -137,6 +137,26 @@ These documents show **how the architecture evolves over time**.
   *Phased evolution, priorities, and sequencing*
 
 ---
+## Domain-Driven Design & Execution
+
+- [Domain Model, Aggregates & Repositories](./domain-model-aggregates.md)
+- [Repository Pattern & Unit of Work](./repository-patterns.md)
+- [Domain Services & Cross-Aggregate Rules](./domain-services.md)
+- [Process Managers (Sagas) & Eventual Consistency](./process-managers-sagas.md)
+
+## API, Security & Integration
+
+- [API Design & Contract Strategy](./api-design-contracts.md)
+- [Security Architecture & Zero Trust APIs](./security-architecture-apis.md)
+
+## Observability & Intelligence
+
+- [Observability & Architecture Drift Detection](./observability-drift-detection.md)
+- [Reporting & Executive Dashboards](./reporting-executive-views.md)
+
+## Platform Architecture
+
+- [Extensibility, Plugins & Ecosystem Model](./extensibility-plugins.md)
 
 ## Documentation Philosophy
 
