@@ -433,6 +433,62 @@ The **Platform Configuration Aggregate** is a first-class, core architectural bu
 - Subsystems adapt behavior by querying this aggregate
 - All platform behavior derives from this aggregate, not from hard-coded assumptions
 
+### Domain Services
+
+Domain Services represent pure business logic that spans across multiple
+Aggregates where no single Aggregate Root can naturally own the behavior.
+
+**Purpose**
+- Encapsulate cross-aggregate business rules
+- Prevent artificial bloating of Aggregate Roots
+- Maintain domain purity while enabling complex decision logic
+
+**Characteristics**
+- Stateless
+- Contain no persistence logic
+- Do not access repositories or infrastructure
+- Operate only on domain objects passed as parameters
+
+**Examples in EAVIP**
+- Architecture decision evaluation (rework / rearchitect / sunset)
+- Application lifecycle assessment
+- Cross-application dependency risk analysis
+
+Domain Services return decisions or value objects and never mutate state directly.
+
+### Secure Connectivity & Secret Management
+
+EAVIP treats secure connectivity and secret handling as a first-class platform
+capability, distinct from business domains.
+
+**Core Principles**
+- Secrets are never stored in domain aggregates
+- Domain models reference secrets only via identifiers
+- EAVIP integrates with customer-managed secret systems
+- Authentication mechanisms are pluggable and environment-specific
+
+**Capabilities**
+- Support for on-prem and cloud-based secret providers
+- Multiple authentication modes:
+  - Username/password (vaulted)
+  - Certificates
+  - mTLS
+  - LDAP / Active Directory
+  - Cloud-managed identities (where available)
+- Secure connection profiles for:
+  - Databases
+  - Caches
+  - Message queues
+  - External APIs and services
+
+**Design**
+- Connection details are modeled as platform-level aggregates
+- Secret values are resolved at runtime via provider adapters
+- Secrets are never exposed to domain logic or persisted in clear text
+
+This capability enables secure, vendor-neutral integration with customer
+infrastructure across SaaS, BYOC, and on-prem deployments.
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -633,6 +689,8 @@ This rule applies to:
 - Phase 1 Prioritization & Epic Breakdown (MVP Execution)
 - TOGAF Phase C – Data Architecture (Entities, Ownership & Lifecycle)
 - Platform Configuration Aggregate & Guided Customer Onboarding Architecture
+- Domain Services design and cross-aggregate business logic modeling
+- Secure connectivity, secret management, and customer infrastructure integration
 
 ---
 
