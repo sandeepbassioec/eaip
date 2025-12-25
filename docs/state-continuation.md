@@ -58,6 +58,8 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 17. Architecture learning is feedback-driven: questions, answers, correction, and refinement
 18. Architecture artifacts are produced only after stakeholder alignment is achieved
 19. Architectural thinking precedes documentation
+20. Platform-level architectural decisions are captured as immutable, auditable aggregates and are enforced at runtime across all subsystems.
+
 
 ---
 
@@ -398,6 +400,39 @@ event-driven propagation across bounded contexts.
 This model ensures architectural integrity, historical traceability, and safe evolution
 across enterprise-scale systems.
 
+### Platform Configuration Aggregate
+
+The **Platform Configuration Aggregate** is a first-class, core architectural building block of EAVIP.
+
+**Purpose**
+- Acts as the authoritative store for platform-level architectural decisions
+- Freezes infrastructure, reliability, performance, and cost tradeoffs during onboarding
+- Represents the “architecture of the architecture platform itself”
+
+**Key Characteristics**
+- Exactly one instance per deployment / tenant
+- Created exclusively via guided onboarding (SaaS or On-Prem)
+- Immutable by default; changes are rare, governed, and fully audited
+- Read-only for all other bounded contexts
+
+**Responsibilities**
+- Eventing strategy selection (Outbox, Kafka, RabbitMQ, etc.)
+- Consistency and reliability guarantees
+- Cache and storage capability declaration
+- Security posture definition
+- Budget-aware behavior tuning
+- Feature availability boundaries
+
+**Design**
+- Implemented as a single Aggregate Root
+- All sub-configurations are modeled as immutable Value Objects
+- Emits lifecycle Domain Events to bootstrap adapters and workers
+
+**Usage Contract**
+- No business domain is allowed to mutate platform configuration
+- Subsystems adapt behavior by querying this aggregate
+- All platform behavior derives from this aggregate, not from hard-coded assumptions
+
 ---
 
 ## Documentation Strategy (Locked)
@@ -597,6 +632,7 @@ This rule applies to:
 - Roadmap & Phased Execution Plan
 - Phase 1 Prioritization & Epic Breakdown (MVP Execution)
 - TOGAF Phase C – Data Architecture (Entities, Ownership & Lifecycle)
+- Platform Configuration Aggregate & Guided Customer Onboarding Architecture
 
 ---
 
