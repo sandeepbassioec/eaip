@@ -653,6 +653,14 @@ This rule applies to:
   WHY, REASONING, and TRADE-OFFS for every architectural choice.
   Status: Locked
 
+- Decision: Software construction must follow architecture-first execution
+Details:
+  - Bounded contexts finalized before code
+  - Execution order derived from TOGAF phases
+  - Platform built incrementally without violating domain boundaries
+  Status: Locked
+
+
 ---
 
 ## Completed Major Topics
@@ -703,16 +711,21 @@ This rule applies to:
 - Observability, Telemetry & Architecture Drift Detection
 - Reporting, Dashboards & Executive Views
 - Extensibility, Plugins & Ecosystem Model
+- Deployment Models, Packaging & Distribution Strategy
+- Commercial Model, Licensing & Tenant Isolation Strategy
+- Architecture Change Management (TOGAF Phase H)
+- TOGAF ADM Cycle Closure & Operating Model
+
 
 ---
 
 ## Current Progress Pointer
 
 LAST COMPLETED:
-Extensibility, Plugins & Ecosystem Model
+TOGAF ADM Cycle Closure & Operating Model
 
 NEXT TOPIC:
-Deployment Models, Packaging & Distribution Strategy
+Architecture Execution Readiness & Software Construction Strategy
 
 ---
 
