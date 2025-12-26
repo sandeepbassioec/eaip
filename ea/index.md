@@ -158,6 +158,13 @@ These documents show **how the architecture evolves over time**.
 
 - [Extensibility, Plugins & Ecosystem Model](./extensibility-plugins.md)
 
+## Deployment, Commercial & Change Management
+
+- [Deployment Models & Packaging Strategy](./deployment-packaging.md)
+- [Commercial Model & Licensing](./commercial-licensing.md)
+- [Architecture Change Management](./change-management.md)
+- [TOGAF Cycle Closure & Operating Model](./togaf-cycle-closure.md)
+
 ## Documentation Philosophy
 
 All documents in this repository follow these rules:
