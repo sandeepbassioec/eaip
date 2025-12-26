@@ -669,6 +669,22 @@ Details:
   - Chosen to maximize DDD learning and architectural integrity  
   Status: Locked
 
+- Decision: Multi-Database Support Strategy  
+  Details:
+  - EAVIP must support multiple enterprise-grade databases including:
+    - PostgreSQL
+    - SQL Server
+    - Oracle
+    - MySQL
+  - Architecture must not assume any single database vendor
+  - Domain layer remains database-agnostic
+  - Infrastructure layer provides provider-specific implementations
+  - Reference implementation and development will use:
+    - PostgreSQL
+    - SQL Server
+  - Other databases are supported via adapter/provider extensions
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
