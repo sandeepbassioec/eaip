@@ -685,6 +685,65 @@ Details:
   - Other databases are supported via adapter/provider extensions
   Status: Locked
 
+- Decision: Branchless, Expression-Driven Business Logic Enforcement  
+  Details:
+  - EAVIP will prohibit if/else, else-if, and switch-case constructs for all business logic
+  - All business behavior must be:
+    - Expression-based
+    - Rule-driven
+    - Data-configurable
+    - Deterministic and explainable
+  - Backend (C#) implementation will prioritize:
+    - Expression trees
+    - Pre-compiled delegates
+    - Span-friendly, allocation-minimal execution
+    - Predictable GC behavior
+  - Frontend (TypeScript) implementation will follow the same principles:
+    - Declarative rule evaluation
+    - No hard-coded branching for business behavior
+  - Conditional logic is permitted only for:
+    - Infrastructure concerns
+    - Defensive programming (null checks, guards)
+    - Framework integration boundaries
+  Status: Locked
+
+- Decision: Near-Zero Conditional Statements Across the Platform  
+  Details:
+  - EAVIP will aggressively minimize conditional statements (if / else / switch) across the entire codebase
+  - Business logic, domain logic, application logic, and frontend logic must not contain conditional branching
+  - All behavioral variation must be implemented using:
+    - Expression trees
+    - Predicate composition
+    - Rule pipelines
+    - Strategy maps
+    - Declarative configuration
+    - Pre-compiled delegates
+  - Conditional statements are permitted only in:
+    - Ultra-low-level reusable platform primitives (e.g. null guards, empty checks)
+    - Defensive programming at framework boundaries
+  - Such conditional logic must be:
+    - Centralized
+    - Reusable
+    - Non-duplicated
+    - Free of business meaning
+  - No conditional logic is allowed to encode business decisions, policies, or workflows
+  Status: Locked
+
+- Decision: Mono-Repository Strategy for Entire Platform  
+  Details:
+  - EAVIP will use a single mono-repository for:
+    - Enterprise Architecture documents (TOGAF, DDD)
+    - Backend services and domain code
+    - Frontend UI code
+    - Reusable shared libraries
+    - Provider adapters (DB, messaging, secrets)
+    - Database schemas and migration scripts
+    - Deployment and infrastructure scripts
+  - Repository structure will enforce logical boundaries via folders, not repos
+  - Versioning, governance, and traceability will be managed at repository level
+  - This ensures atomic evolution of architecture, code, and documentation
+  Status: Locked
+
 ---
 
 ## Completed Major Topics
