@@ -164,6 +164,7 @@ These documents show **how the architecture evolves over time**.
 - [Commercial Model & Licensing](./commercial-licensing.md)
 - [Architecture Change Management](./change-management.md)
 - [TOGAF Cycle Closure & Operating Model](./togaf-cycle-closure.md)
+- [Technology Selection & Tradeoff](./technology-selection-and-tradeoffs.md)
 
 ## Documentation Philosophy
 
