@@ -59,7 +59,52 @@ Build a **CAST Highlight–class (and beyond)** enterprise platform that provide
 18. Architecture artifacts are produced only after stakeholder alignment is achieved
 19. Architectural thinking precedes documentation
 20. Platform-level architectural decisions are captured as immutable, auditable aggregates and are enforced at runtime across all subsystems.
+21. Architectural changes must never be implicit or silent
+22. Any modification to previously agreed architecture must be explicitly announced, justified, and approved
+23. Architectural stability is preferred over premature optimization
+24. Trust between architect and system design process is treated as a first-class concern
+25. No renaming, relocation, or abstraction change is allowed without explicit change declaration
+---
 
+## Architecture Change & Evolution Protocol (Locked)
+
+This protocol governs how architectural changes are introduced, communicated, and executed.
+
+### Change Announcement Rule
+
+Any change to previously agreed architecture MUST be announced explicitly before implementation.
+
+Each change announcement must include:
+
+1. **What is changing**
+   - Exact class, folder, module, or concept
+
+2. **Why the change is needed**
+   - Design flaw, scalability issue, consistency, future domains, or correctness
+
+3. **What remains unchanged**
+   - To preserve architectural stability and trust
+
+4. **Migration instructions**
+   - Rename, move, delete, or no-operation
+
+5. **Change status**
+   - Proposed / Approved / Locked
+
+### Enforcement
+
+- No silent refactors are allowed
+- No implicit renaming is allowed
+- No architectural reshaping without approval is allowed
+- If a change is not announced, it is assumed to be **invalid**
+
+This protocol exists to preserve:
+- Trust
+- Cognitive clarity
+- Long-term maintainability
+- Architectural discipline
+
+This protocol is **non-negotiable**.
 
 ---
 
@@ -507,6 +552,7 @@ infrastructure across SaaS, BYOC, and on-prem deployments.
 - The question framework captures stakeholder-wise and phase-wise questions
 - This framework is reusable across future enterprise architecture engagements
 - Questions are derived from real execution, not theoretical templates
+  
 ### Documentation Reasoning Rule (Non-Negotiable)
 
 All TOGAF and Domain-Driven Design (DDD) documentation produced for EAVIP
@@ -535,6 +581,14 @@ This rule applies to:
 - Architecture Decision Records (ADRs)
 - Reference architectures derived from this project
 
+In addition to documenting WHY, alternatives, and trade-offs,
+any change to previously documented architecture must explicitly document that a change has occurred, including:
+*  What was changed
+*  Why the change was necessary
+*  What assumptions were invalidated
+*  What remains unchanged
+
+Architecture documentation that introduces unannounced or unexplained changes is considered invalid.
 ---
 
 ## Locked Decisions
@@ -801,6 +855,37 @@ Details:
 - Architecture Execution Readiness & Software Construction Strategy
 - Bounded Context to Code & Service Boundary Mapping
 
+---
+## Execution Discipline & Trust Contract (Locked)
+
+This project operates under a strict execution and trust contract between architectural intent and implementation.
+
+### Principles
+
+- Change is allowed; **unannounced change is forbidden**
+- Iteration is encouraged; **confusion is not**
+- Refactoring is expected; **surprises are not**
+- Architectural ownership is shared; **accountability is explicit**
+
+### Responsibilities
+
+**Assistant (Architect Role):**
+- Must announce and explain every architectural change
+- Must never assume silent acceptance
+- Must prioritize clarity over cleverness
+
+**User (Execution Role):**
+- Executes only explicitly approved changes
+- Flags inconsistencies and ambiguities
+- Does not infer intent when not stated
+
+### Outcome
+
+This contract ensures:
+- Predictable evolution
+- Reduced cognitive load
+- High-trust collaboration
+- Enterprise-grade architectural rigor
 
 ---
 
